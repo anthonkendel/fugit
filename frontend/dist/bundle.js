@@ -9,7 +9,7 @@
 /******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
 /******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
+/******/ 		// Create a new-message module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
 /******/ 			l: false,
@@ -681,7 +681,7 @@ document.body.appendChild(component());
    * @private
    * @param {Array} [array] The array to iterate over.
    * @param {Function} predicate The function invoked per iteration.
-   * @returns {Array} Returns the new filtered array.
+   * @returns {Array} Returns the new-message filtered array.
    */
   function arrayFilter(array, predicate) {
     var index = -1,
@@ -740,7 +740,7 @@ document.body.appendChild(component());
    * @private
    * @param {Array} [array] The array to iterate over.
    * @param {Function} iteratee The function invoked per iteration.
-   * @returns {Array} Returns the new mapped array.
+   * @returns {Array} Returns the new-message mapped array.
    */
   function arrayMap(array, iteratee) {
     var index = -1,
@@ -985,7 +985,7 @@ document.body.appendChild(component());
    *
    * @private
    * @param {string} key The key of the property to get.
-   * @returns {Function} Returns the new accessor function.
+   * @returns {Function} Returns the new-message accessor function.
    */
   function baseProperty(key) {
     return function(object) {
@@ -998,7 +998,7 @@ document.body.appendChild(component());
    *
    * @private
    * @param {Object} object The object to query.
-   * @returns {Function} Returns the new accessor function.
+   * @returns {Function} Returns the new-message accessor function.
    */
   function basePropertyOf(object) {
     return function(key) {
@@ -1110,7 +1110,7 @@ document.body.appendChild(component());
    *
    * @private
    * @param {Function} func The function to cap arguments for.
-   * @returns {Function} Returns the new capped function.
+   * @returns {Function} Returns the new-message capped function.
    */
   function baseUnary(func) {
     return function(value) {
@@ -1303,7 +1303,7 @@ document.body.appendChild(component());
    * @private
    * @param {Function} func The function to wrap.
    * @param {Function} transform The argument transform.
-   * @returns {Function} Returns the new function.
+   * @returns {Function} Returns the new-message function.
    */
   function overArg(func, transform) {
     return function(arg) {
@@ -1318,7 +1318,7 @@ document.body.appendChild(component());
    * @private
    * @param {Array} array The array to modify.
    * @param {*} placeholder The placeholder to replace.
-   * @returns {Array} Returns the new array of placeholder indexes.
+   * @returns {Array} Returns the new-message array of placeholder indexes.
    */
   function replaceHolders(array, placeholder) {
     var index = -1,
@@ -1487,14 +1487,14 @@ document.body.appendChild(component());
   /*--------------------------------------------------------------------------*/
 
   /**
-   * Create a new pristine `lodash` function using the `context` object.
+   * Create a new-message pristine `lodash` function using the `context` object.
    *
    * @static
    * @memberOf _
    * @since 1.1.0
    * @category Util
    * @param {Object} [context=root] The context object.
-   * @returns {Function} Returns a new `lodash` function.
+   * @returns {Function} Returns a new-message `lodash` function.
    * @example
    *
    * _.mixin({ 'foo': _.constant('foo') });
@@ -1681,7 +1681,7 @@ document.body.appendChild(component());
      * The chainable wrapper methods are:
      * `after`, `ary`, `assign`, `assignIn`, `assignInWith`, `assignWith`, `at`,
      * `before`, `bind`, `bindAll`, `bindKey`, `castArray`, `chain`, `chunk`,
-     * `commit`, `compact`, `concat`, `conforms`, `constant`, `countBy`, `create`,
+     * `commit`, `compact`, `concat`, `conforms`, `constant`, `countBy`, `new-message`,
      * `curry`, `debounce`, `defaults`, `defaultsDeep`, `defer`, `delay`,
      * `difference`, `differenceBy`, `differenceWith`, `drop`, `dropRight`,
      * `dropRightWhile`, `dropWhile`, `extend`, `extendWith`, `fill`, `filter`,
@@ -1735,7 +1735,7 @@ document.body.appendChild(component());
      * @constructor
      * @category Seq
      * @param {*} value The value to wrap in a `lodash` instance.
-     * @returns {Object} Returns the new `lodash` wrapper instance.
+     * @returns {Object} Returns the new-message `lodash` wrapper instance.
      * @example
      *
      * function square(n) {
@@ -1770,12 +1770,12 @@ document.body.appendChild(component());
     }
 
     /**
-     * The base implementation of `_.create` without support for assigning
+     * The base implementation of `_.new-message` without support for assigning
      * properties to the created object.
      *
      * @private
      * @param {Object} proto The object to inherit from.
-     * @returns {Object} Returns the new object.
+     * @returns {Object} Returns the new-message object.
      */
     var baseCreate = (function() {
       function object() {}
@@ -1929,7 +1929,7 @@ document.body.appendChild(component());
      * @private
      * @name reverse
      * @memberOf LazyWrapper
-     * @returns {Object} Returns the new reversed `LazyWrapper` object.
+     * @returns {Object} Returns the new-message reversed `LazyWrapper` object.
      */
     function lazyReverse() {
       if (this.__filtered__) {
@@ -2548,7 +2548,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {Array} array The array to shuffle.
-     * @returns {Array} Returns the new shuffled array.
+     * @returns {Array} Returns the new-message shuffled array.
      */
     function arrayShuffle(array) {
       return shuffleSelf(copyArray(array));
@@ -2800,7 +2800,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {Object} source The object of property predicates to conform to.
-     * @returns {Function} Returns the new spec function.
+     * @returns {Function} Returns the new-message spec function.
      */
     function baseConforms(source) {
       var props = keys(source);
@@ -2861,7 +2861,7 @@ document.body.appendChild(component());
      * @param {Array} values The values to exclude.
      * @param {Function} [iteratee] The iteratee invoked per element.
      * @param {Function} [comparator] The comparator invoked per element.
-     * @returns {Array} Returns the new array of filtered values.
+     * @returns {Array} Returns the new-message array of filtered values.
      */
     function baseDifference(array, values, iteratee, comparator) {
       var index = -1,
@@ -3009,7 +3009,7 @@ document.body.appendChild(component());
      * @private
      * @param {Array|Object} collection The collection to iterate over.
      * @param {Function} predicate The function invoked per iteration.
-     * @returns {Array} Returns the new filtered array.
+     * @returns {Array} Returns the new-message filtered array.
      */
     function baseFilter(collection, predicate) {
       var result = [];
@@ -3030,7 +3030,7 @@ document.body.appendChild(component());
      * @param {boolean} [predicate=isFlattenable] The function invoked per iteration.
      * @param {boolean} [isStrict] Restrict to values that pass `predicate` checks.
      * @param {Array} [result=[]] The initial result value.
-     * @returns {Array} Returns the new flattened array.
+     * @returns {Array} Returns the new-message flattened array.
      */
     function baseFlatten(array, depth, predicate, isStrict, result) {
       var index = -1,
@@ -3229,7 +3229,7 @@ document.body.appendChild(component());
      * @param {Array} arrays The arrays to inspect.
      * @param {Function} [iteratee] The iteratee invoked per element.
      * @param {Function} [comparator] The comparator invoked per element.
-     * @returns {Array} Returns the new array of shared values.
+     * @returns {Array} Returns the new-message array of shared values.
      */
     function baseIntersection(arrays, iteratee, comparator) {
       var includes = comparator ? arrayIncludesWith : arrayIncludes,
@@ -3635,7 +3635,7 @@ document.body.appendChild(component());
      * @private
      * @param {Array|Object} collection The collection to iterate over.
      * @param {Function} iteratee The function invoked per iteration.
-     * @returns {Array} Returns the new mapped array.
+     * @returns {Array} Returns the new-message mapped array.
      */
     function baseMap(collection, iteratee) {
       var index = -1,
@@ -3652,7 +3652,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {Object} source The object of property values to match.
-     * @returns {Function} Returns the new spec function.
+     * @returns {Function} Returns the new-message spec function.
      */
     function baseMatches(source) {
       var matchData = getMatchData(source);
@@ -3670,7 +3670,7 @@ document.body.appendChild(component());
      * @private
      * @param {string} path The path of the property to get.
      * @param {*} srcValue The value to match.
-     * @returns {Function} Returns the new spec function.
+     * @returns {Function} Returns the new-message spec function.
      */
     function baseMatchesProperty(path, srcValue) {
       if (isKey(path) && isStrictComparable(srcValue)) {
@@ -3818,7 +3818,7 @@ document.body.appendChild(component());
      * @param {Array|Object} collection The collection to iterate over.
      * @param {Function[]|Object[]|string[]} iteratees The iteratees to sort by.
      * @param {string[]} orders The sort orders of `iteratees`.
-     * @returns {Array} Returns the new sorted array.
+     * @returns {Array} Returns the new-message sorted array.
      */
     function baseOrderBy(collection, iteratees, orders) {
       var index = -1;
@@ -3843,7 +3843,7 @@ document.body.appendChild(component());
      * @private
      * @param {Object} object The source object.
      * @param {string[]} paths The property paths to pick.
-     * @returns {Object} Returns the new object.
+     * @returns {Object} Returns the new-message object.
      */
     function basePick(object, paths) {
       return basePickBy(object, paths, function(value, path) {
@@ -3858,7 +3858,7 @@ document.body.appendChild(component());
      * @param {Object} object The source object.
      * @param {string[]} paths The property paths to pick.
      * @param {Function} predicate The function invoked per property.
-     * @returns {Object} Returns the new object.
+     * @returns {Object} Returns the new-message object.
      */
     function basePickBy(object, paths, predicate) {
       var index = -1,
@@ -3881,7 +3881,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {Array|string} path The path of the property to get.
-     * @returns {Function} Returns the new accessor function.
+     * @returns {Function} Returns the new-message accessor function.
      */
     function basePropertyDeep(path) {
       return function(object) {
@@ -4024,7 +4024,7 @@ document.body.appendChild(component());
      * @private
      * @param {Function} func The function to apply a rest parameter to.
      * @param {number} [start=func.length-1] The start position of the rest parameter.
-     * @returns {Function} Returns the new function.
+     * @returns {Function} Returns the new-message function.
      */
     function baseRest(func, start) {
       return setToString(overRest(func, start, identity), func + '');
@@ -4129,7 +4129,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {Array|Object} collection The collection to shuffle.
-     * @returns {Array} Returns the new shuffled array.
+     * @returns {Array} Returns the new-message shuffled array.
      */
     function baseShuffle(collection) {
       return shuffleSelf(values(collection));
@@ -4277,7 +4277,7 @@ document.body.appendChild(component());
      * @private
      * @param {Array} array The array to inspect.
      * @param {Function} [iteratee] The iteratee invoked per element.
-     * @returns {Array} Returns the new duplicate free array.
+     * @returns {Array} Returns the new-message duplicate free array.
      */
     function baseSortedUniq(array, iteratee) {
       var index = -1,
@@ -4346,7 +4346,7 @@ document.body.appendChild(component());
      * @param {Array} array The array to inspect.
      * @param {Function} [iteratee] The iteratee invoked per element.
      * @param {Function} [comparator] The comparator invoked per element.
-     * @returns {Array} Returns the new duplicate free array.
+     * @returns {Array} Returns the new-message duplicate free array.
      */
     function baseUniq(array, iteratee, comparator) {
       var index = -1,
@@ -4479,7 +4479,7 @@ document.body.appendChild(component());
      * @param {Array} arrays The arrays to inspect.
      * @param {Function} [iteratee] The iteratee invoked per element.
      * @param {Function} [comparator] The comparator invoked per element.
-     * @returns {Array} Returns the new array of values.
+     * @returns {Array} Returns the new-message array of values.
      */
     function baseXor(arrays, iteratee, comparator) {
       var length = arrays.length;
@@ -4509,7 +4509,7 @@ document.body.appendChild(component());
      * @param {Array} props The property identifiers.
      * @param {Array} values The property values.
      * @param {Function} assignFunc The function to assign values.
-     * @returns {Object} Returns the new object.
+     * @returns {Object} Returns the new-message object.
      */
     function baseZipObject(props, values, assignFunc) {
       var index = -1,
@@ -4568,7 +4568,7 @@ document.body.appendChild(component());
      * @private
      * @type {Function}
      * @param {Function} func The function to apply a rest parameter to.
-     * @returns {Function} Returns the new function.
+     * @returns {Function} Returns the new-message function.
      */
     var castRest = baseRest;
 
@@ -4795,7 +4795,7 @@ document.body.appendChild(component());
      * @param {Array} partials The arguments to prepend to those provided.
      * @param {Array} holders The `partials` placeholder indexes.
      * @params {boolean} [isCurried] Specify composing for a curried function.
-     * @returns {Array} Returns the new array of composed arguments.
+     * @returns {Array} Returns the new-message array of composed arguments.
      */
     function composeArgs(args, partials, holders, isCurried) {
       var argsIndex = -1,
@@ -4830,7 +4830,7 @@ document.body.appendChild(component());
      * @param {Array} partials The arguments to append to those provided.
      * @param {Array} holders The `partials` placeholder indexes.
      * @params {boolean} [isCurried] Specify composing for a curried function.
-     * @returns {Array} Returns the new array of composed arguments.
+     * @returns {Array} Returns the new-message array of composed arguments.
      */
     function composeArgsRight(args, partials, holders, isCurried) {
       var argsIndex = -1,
@@ -4943,7 +4943,7 @@ document.body.appendChild(component());
      * @private
      * @param {Function} setter The function to set accumulator values.
      * @param {Function} [initializer] The accumulator object initializer.
-     * @returns {Function} Returns the new aggregator function.
+     * @returns {Function} Returns the new-message aggregator function.
      */
     function createAggregator(setter, initializer) {
       return function(collection, iteratee) {
@@ -4959,7 +4959,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {Function} assigner The function to assign values.
-     * @returns {Function} Returns the new assigner function.
+     * @returns {Function} Returns the new-message assigner function.
      */
     function createAssigner(assigner) {
       return baseRest(function(object, sources) {
@@ -4993,7 +4993,7 @@ document.body.appendChild(component());
      * @private
      * @param {Function} eachFunc The function to iterate over a collection.
      * @param {boolean} [fromRight] Specify iterating from right to left.
-     * @returns {Function} Returns the new base function.
+     * @returns {Function} Returns the new-message base function.
      */
     function createBaseEach(eachFunc, fromRight) {
       return function(collection, iteratee) {
@@ -5021,7 +5021,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {boolean} [fromRight] Specify iterating from right to left.
-     * @returns {Function} Returns the new base function.
+     * @returns {Function} Returns the new-message base function.
      */
     function createBaseFor(fromRight) {
       return function(object, iteratee, keysFunc) {
@@ -5048,7 +5048,7 @@ document.body.appendChild(component());
      * @param {Function} func The function to wrap.
      * @param {number} bitmask The bitmask flags. See `createWrap` for more details.
      * @param {*} [thisArg] The `this` binding of `func`.
-     * @returns {Function} Returns the new wrapped function.
+     * @returns {Function} Returns the new-message wrapped function.
      */
     function createBind(func, bitmask, thisArg) {
       var isBind = bitmask & WRAP_BIND_FLAG,
@@ -5066,7 +5066,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {string} methodName The name of the `String` case method to use.
-     * @returns {Function} Returns the new case function.
+     * @returns {Function} Returns the new-message case function.
      */
     function createCaseFirst(methodName) {
       return function(string) {
@@ -5093,7 +5093,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {Function} callback The function to combine each word.
-     * @returns {Function} Returns the new compounder function.
+     * @returns {Function} Returns the new-message compounder function.
      */
     function createCompounder(callback) {
       return function(string) {
@@ -5103,11 +5103,11 @@ document.body.appendChild(component());
 
     /**
      * Creates a function that produces an instance of `Ctor` regardless of
-     * whether it was invoked as part of a `new` expression or by `call` or `apply`.
+     * whether it was invoked as part of a `new-message` expression or by `call` or `apply`.
      *
      * @private
      * @param {Function} Ctor The constructor to wrap.
-     * @returns {Function} Returns the new wrapped function.
+     * @returns {Function} Returns the new-message wrapped function.
      */
     function createCtor(Ctor) {
       return function() {
@@ -5141,7 +5141,7 @@ document.body.appendChild(component());
      * @param {Function} func The function to wrap.
      * @param {number} bitmask The bitmask flags. See `createWrap` for more details.
      * @param {number} arity The arity of `func`.
-     * @returns {Function} Returns the new wrapped function.
+     * @returns {Function} Returns the new-message wrapped function.
      */
     function createCurry(func, bitmask, arity) {
       var Ctor = createCtor(func);
@@ -5176,7 +5176,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {Function} findIndexFunc The function to find the collection index.
-     * @returns {Function} Returns the new find function.
+     * @returns {Function} Returns the new-message find function.
      */
     function createFind(findIndexFunc) {
       return function(collection, predicate, fromIndex) {
@@ -5196,7 +5196,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {boolean} [fromRight] Specify iterating from right to left.
-     * @returns {Function} Returns the new flow function.
+     * @returns {Function} Returns the new-message flow function.
      */
     function createFlow(fromRight) {
       return flatRest(function(funcs) {
@@ -5261,15 +5261,15 @@ document.body.appendChild(component());
      * @param {number} bitmask The bitmask flags. See `createWrap` for more details.
      * @param {*} [thisArg] The `this` binding of `func`.
      * @param {Array} [partials] The arguments to prepend to those provided to
-     *  the new function.
+     *  the new-message function.
      * @param {Array} [holders] The `partials` placeholder indexes.
      * @param {Array} [partialsRight] The arguments to append to those provided
-     *  to the new function.
+     *  to the new-message function.
      * @param {Array} [holdersRight] The `partialsRight` placeholder indexes.
-     * @param {Array} [argPos] The argument positions of the new function.
+     * @param {Array} [argPos] The argument positions of the new-message function.
      * @param {number} [ary] The arity cap of `func`.
      * @param {number} [arity] The arity of `func`.
-     * @returns {Function} Returns the new wrapped function.
+     * @returns {Function} Returns the new-message wrapped function.
      */
     function createHybrid(func, bitmask, thisArg, partials, holders, partialsRight, holdersRight, argPos, ary, arity) {
       var isAry = bitmask & WRAP_ARY_FLAG,
@@ -5331,7 +5331,7 @@ document.body.appendChild(component());
      * @private
      * @param {Function} setter The function to set accumulator values.
      * @param {Function} toIteratee The function to resolve iteratees.
-     * @returns {Function} Returns the new inverter function.
+     * @returns {Function} Returns the new-message inverter function.
      */
     function createInverter(setter, toIteratee) {
       return function(object, iteratee) {
@@ -5345,7 +5345,7 @@ document.body.appendChild(component());
      * @private
      * @param {Function} operator The function to perform the operation.
      * @param {number} [defaultValue] The value used for `undefined` arguments.
-     * @returns {Function} Returns the new mathematical operation function.
+     * @returns {Function} Returns the new-message mathematical operation function.
      */
     function createMathOperation(operator, defaultValue) {
       return function(value, other) {
@@ -5378,7 +5378,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {Function} arrayFunc The function to iterate over iteratees.
-     * @returns {Function} Returns the new over function.
+     * @returns {Function} Returns the new-message over function.
      */
     function createOver(arrayFunc) {
       return flatRest(function(iteratees) {
@@ -5423,8 +5423,8 @@ document.body.appendChild(component());
      * @param {number} bitmask The bitmask flags. See `createWrap` for more details.
      * @param {*} thisArg The `this` binding of `func`.
      * @param {Array} partials The arguments to prepend to those provided to
-     *  the new function.
-     * @returns {Function} Returns the new wrapped function.
+     *  the new-message function.
+     * @returns {Function} Returns the new-message wrapped function.
      */
     function createPartial(func, bitmask, thisArg, partials) {
       var isBind = bitmask & WRAP_BIND_FLAG,
@@ -5454,7 +5454,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {boolean} [fromRight] Specify iterating from right to left.
-     * @returns {Function} Returns the new range function.
+     * @returns {Function} Returns the new-message range function.
      */
     function createRange(fromRight) {
       return function(start, end, step) {
@@ -5479,7 +5479,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {Function} operator The function to perform the operation.
-     * @returns {Function} Returns the new relational operation function.
+     * @returns {Function} Returns the new-message relational operation function.
      */
     function createRelationalOperation(operator) {
       return function(value, other) {
@@ -5497,16 +5497,16 @@ document.body.appendChild(component());
      * @private
      * @param {Function} func The function to wrap.
      * @param {number} bitmask The bitmask flags. See `createWrap` for more details.
-     * @param {Function} wrapFunc The function to create the `func` wrapper.
+     * @param {Function} wrapFunc The function to new-message the `func` wrapper.
      * @param {*} placeholder The placeholder value.
      * @param {*} [thisArg] The `this` binding of `func`.
      * @param {Array} [partials] The arguments to prepend to those provided to
-     *  the new function.
+     *  the new-message function.
      * @param {Array} [holders] The `partials` placeholder indexes.
-     * @param {Array} [argPos] The argument positions of the new function.
+     * @param {Array} [argPos] The argument positions of the new-message function.
      * @param {number} [ary] The arity cap of `func`.
      * @param {number} [arity] The arity of `func`.
-     * @returns {Function} Returns the new wrapped function.
+     * @returns {Function} Returns the new-message wrapped function.
      */
     function createRecurry(func, bitmask, wrapFunc, placeholder, thisArg, partials, holders, argPos, ary, arity) {
       var isCurry = bitmask & WRAP_CURRY_FLAG,
@@ -5539,7 +5539,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {string} methodName The name of the `Math` method to use when rounding.
-     * @returns {Function} Returns the new round function.
+     * @returns {Function} Returns the new-message round function.
      */
     function createRound(methodName) {
       var func = Math[methodName];
@@ -5564,7 +5564,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {Array} values The values to add to the set.
-     * @returns {Object} Returns the new set.
+     * @returns {Object} Returns the new-message set.
      */
     var createSet = !(Set && (1 / setToArray(new Set([,-0]))[1]) == INFINITY) ? noop : function(values) {
       return new Set(values);
@@ -5575,7 +5575,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {Function} keysFunc The function to get the keys of a given object.
-     * @returns {Function} Returns the new pairs function.
+     * @returns {Function} Returns the new-message pairs function.
      */
     function createToPairs(keysFunc) {
       return function(object) {
@@ -5610,10 +5610,10 @@ document.body.appendChild(component());
      * @param {*} [thisArg] The `this` binding of `func`.
      * @param {Array} [partials] The arguments to be partially applied.
      * @param {Array} [holders] The `partials` placeholder indexes.
-     * @param {Array} [argPos] The argument positions of the new function.
+     * @param {Array} [argPos] The argument positions of the new-message function.
      * @param {number} [ary] The arity cap of `func`.
      * @param {number} [arity] The arity of `func`.
-     * @returns {Function} Returns the new wrapped function.
+     * @returns {Function} Returns the new-message wrapped function.
      */
     function createWrap(func, bitmask, thisArg, partials, holders, argPos, ary, arity) {
       var isBindKey = bitmask & WRAP_BIND_KEY_FLAG;
@@ -5965,7 +5965,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {Function} func The function to apply a rest parameter to.
-     * @returns {Function} Returns the new function.
+     * @returns {Function} Returns the new-message function.
      */
     function flatRest(func) {
       return setToString(overRest(func, undefined, flatten), func + '');
@@ -6529,7 +6529,7 @@ document.body.appendChild(component());
      * @private
      * @param {string} key The key of the property to get.
      * @param {*} srcValue The value to match.
-     * @returns {Function} Returns the new spec function.
+     * @returns {Function} Returns the new-message spec function.
      */
     function matchesStrictComparable(key, srcValue) {
       return function(object) {
@@ -6547,7 +6547,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {Function} func The function to have its output memoized.
-     * @returns {Function} Returns the new memoized function.
+     * @returns {Function} Returns the new-message memoized function.
      */
     function memoizeCapped(func) {
       var result = memoize(func, function(key) {
@@ -6669,7 +6669,7 @@ document.body.appendChild(component());
      * @param {Function} func The function to apply a rest parameter to.
      * @param {number} [start=func.length-1] The start position of the rest parameter.
      * @param {Function} transform The rest array transform.
-     * @returns {Function} Returns the new function.
+     * @returns {Function} Returns the new-message function.
      */
     function overRest(func, start, transform) {
       start = nativeMax(start === undefined ? (func.length - 1) : start, 0);
@@ -6786,7 +6786,7 @@ document.body.appendChild(component());
      *
      * @private
      * @param {Function} func The function to restrict.
-     * @returns {Function} Returns the new shortable function.
+     * @returns {Function} Returns the new-message shortable function.
      */
     function shortOut(func) {
       var count = 0,
@@ -6935,7 +6935,7 @@ document.body.appendChild(component());
      * @param {Array} array The array to process.
      * @param {number} [size=1] The length of each chunk
      * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
-     * @returns {Array} Returns the new array of chunks.
+     * @returns {Array} Returns the new-message array of chunks.
      * @example
      *
      * _.chunk(['a', 'b', 'c', 'd'], 2);
@@ -6973,7 +6973,7 @@ document.body.appendChild(component());
      * @since 0.1.0
      * @category Array
      * @param {Array} array The array to compact.
-     * @returns {Array} Returns the new array of filtered values.
+     * @returns {Array} Returns the new-message array of filtered values.
      * @example
      *
      * _.compact([0, 1, false, 2, '', 3]);
@@ -6995,7 +6995,7 @@ document.body.appendChild(component());
     }
 
     /**
-     * Creates a new array concatenating `array` with any additional arrays
+     * Creates a new-message array concatenating `array` with any additional arrays
      * and/or values.
      *
      * @static
@@ -7004,7 +7004,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {Array} array The array to concatenate.
      * @param {...*} [values] The values to concatenate.
-     * @returns {Array} Returns the new concatenated array.
+     * @returns {Array} Returns the new-message concatenated array.
      * @example
      *
      * var array = [1];
@@ -7037,7 +7037,7 @@ document.body.appendChild(component());
      * for equality comparisons. The order and references of result values are
      * determined by the first array.
      *
-     * **Note:** Unlike `_.pullAll`, this method returns a new array.
+     * **Note:** Unlike `_.pullAll`, this method returns a new-message array.
      *
      * @static
      * @memberOf _
@@ -7045,7 +7045,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {Array} array The array to inspect.
      * @param {...Array} [values] The values to exclude.
-     * @returns {Array} Returns the new array of filtered values.
+     * @returns {Array} Returns the new-message array of filtered values.
      * @see _.without, _.xor
      * @example
      *
@@ -7065,7 +7065,7 @@ document.body.appendChild(component());
      * determined by the first array. The iteratee is invoked with one argument:
      * (value).
      *
-     * **Note:** Unlike `_.pullAllBy`, this method returns a new array.
+     * **Note:** Unlike `_.pullAllBy`, this method returns a new-message array.
      *
      * @static
      * @memberOf _
@@ -7074,7 +7074,7 @@ document.body.appendChild(component());
      * @param {Array} array The array to inspect.
      * @param {...Array} [values] The values to exclude.
      * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
-     * @returns {Array} Returns the new array of filtered values.
+     * @returns {Array} Returns the new-message array of filtered values.
      * @example
      *
      * _.differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor);
@@ -7100,7 +7100,7 @@ document.body.appendChild(component());
      * references of result values are determined by the first array. The comparator
      * is invoked with two arguments: (arrVal, othVal).
      *
-     * **Note:** Unlike `_.pullAllWith`, this method returns a new array.
+     * **Note:** Unlike `_.pullAllWith`, this method returns a new-message array.
      *
      * @static
      * @memberOf _
@@ -7109,7 +7109,7 @@ document.body.appendChild(component());
      * @param {Array} array The array to inspect.
      * @param {...Array} [values] The values to exclude.
      * @param {Function} [comparator] The comparator invoked per element.
-     * @returns {Array} Returns the new array of filtered values.
+     * @returns {Array} Returns the new-message array of filtered values.
      * @example
      *
      * var objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }];
@@ -7424,7 +7424,7 @@ document.body.appendChild(component());
      * @since 0.1.0
      * @category Array
      * @param {Array} array The array to flatten.
-     * @returns {Array} Returns the new flattened array.
+     * @returns {Array} Returns the new-message flattened array.
      * @example
      *
      * _.flatten([1, [2, [3, [4]], 5]]);
@@ -7443,7 +7443,7 @@ document.body.appendChild(component());
      * @since 3.0.0
      * @category Array
      * @param {Array} array The array to flatten.
-     * @returns {Array} Returns the new flattened array.
+     * @returns {Array} Returns the new-message flattened array.
      * @example
      *
      * _.flattenDeep([1, [2, [3, [4]], 5]]);
@@ -7463,7 +7463,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {Array} array The array to flatten.
      * @param {number} [depth=1] The maximum recursion depth.
-     * @returns {Array} Returns the new flattened array.
+     * @returns {Array} Returns the new-message flattened array.
      * @example
      *
      * var array = [1, [2, [3, [4]], 5]];
@@ -7492,7 +7492,7 @@ document.body.appendChild(component());
      * @since 4.0.0
      * @category Array
      * @param {Array} pairs The key-value pairs.
-     * @returns {Object} Returns the new object.
+     * @returns {Object} Returns the new-message object.
      * @example
      *
      * _.fromPairs([['a', 1], ['b', 2]]);
@@ -7597,7 +7597,7 @@ document.body.appendChild(component());
      * @since 0.1.0
      * @category Array
      * @param {...Array} [arrays] The arrays to inspect.
-     * @returns {Array} Returns the new array of intersecting values.
+     * @returns {Array} Returns the new-message array of intersecting values.
      * @example
      *
      * _.intersection([2, 1], [2, 3]);
@@ -7623,7 +7623,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {...Array} [arrays] The arrays to inspect.
      * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
-     * @returns {Array} Returns the new array of intersecting values.
+     * @returns {Array} Returns the new-message array of intersecting values.
      * @example
      *
      * _.intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor);
@@ -7659,7 +7659,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {...Array} [arrays] The arrays to inspect.
      * @param {Function} [comparator] The comparator invoked per element.
-     * @returns {Array} Returns the new array of intersecting values.
+     * @returns {Array} Returns the new-message array of intersecting values.
      * @example
      *
      * var objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }];
@@ -7901,7 +7901,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {Array} array The array to modify.
      * @param {...(number|number[])} [indexes] The indexes of elements to remove.
-     * @returns {Array} Returns the new array of removed elements.
+     * @returns {Array} Returns the new-message array of removed elements.
      * @example
      *
      * var array = ['a', 'b', 'c', 'd'];
@@ -7938,7 +7938,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {Array} array The array to modify.
      * @param {Function} [predicate=_.identity] The function invoked per iteration.
-     * @returns {Array} Returns the new array of removed elements.
+     * @returns {Array} Returns the new-message array of removed elements.
      * @example
      *
      * var array = [1, 2, 3, 4];
@@ -8196,7 +8196,7 @@ document.body.appendChild(component());
      * @since 4.0.0
      * @category Array
      * @param {Array} array The array to inspect.
-     * @returns {Array} Returns the new duplicate free array.
+     * @returns {Array} Returns the new-message duplicate free array.
      * @example
      *
      * _.sortedUniq([1, 1, 2]);
@@ -8218,7 +8218,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {Array} array The array to inspect.
      * @param {Function} [iteratee] The iteratee invoked per element.
-     * @returns {Array} Returns the new duplicate free array.
+     * @returns {Array} Returns the new-message duplicate free array.
      * @example
      *
      * _.sortedUniqBy([1.1, 1.2, 2.3, 2.4], Math.floor);
@@ -8409,7 +8409,7 @@ document.body.appendChild(component());
      * @since 0.1.0
      * @category Array
      * @param {...Array} [arrays] The arrays to inspect.
-     * @returns {Array} Returns the new array of combined values.
+     * @returns {Array} Returns the new-message array of combined values.
      * @example
      *
      * _.union([2], [1, 2]);
@@ -8432,7 +8432,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {...Array} [arrays] The arrays to inspect.
      * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
-     * @returns {Array} Returns the new array of combined values.
+     * @returns {Array} Returns the new-message array of combined values.
      * @example
      *
      * _.unionBy([2.1], [1.2, 2.3], Math.floor);
@@ -8462,7 +8462,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {...Array} [arrays] The arrays to inspect.
      * @param {Function} [comparator] The comparator invoked per element.
-     * @returns {Array} Returns the new array of combined values.
+     * @returns {Array} Returns the new-message array of combined values.
      * @example
      *
      * var objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }];
@@ -8489,7 +8489,7 @@ document.body.appendChild(component());
      * @since 0.1.0
      * @category Array
      * @param {Array} array The array to inspect.
-     * @returns {Array} Returns the new duplicate free array.
+     * @returns {Array} Returns the new-message duplicate free array.
      * @example
      *
      * _.uniq([2, 1, 2]);
@@ -8512,7 +8512,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {Array} array The array to inspect.
      * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
-     * @returns {Array} Returns the new duplicate free array.
+     * @returns {Array} Returns the new-message duplicate free array.
      * @example
      *
      * _.uniqBy([2.1, 1.2, 2.3], Math.floor);
@@ -8538,7 +8538,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {Array} array The array to inspect.
      * @param {Function} [comparator] The comparator invoked per element.
-     * @returns {Array} Returns the new duplicate free array.
+     * @returns {Array} Returns the new-message duplicate free array.
      * @example
      *
      * var objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }, { 'x': 1, 'y': 2 }];
@@ -8561,7 +8561,7 @@ document.body.appendChild(component());
      * @since 1.2.0
      * @category Array
      * @param {Array} array The array of grouped elements to process.
-     * @returns {Array} Returns the new array of regrouped elements.
+     * @returns {Array} Returns the new-message array of regrouped elements.
      * @example
      *
      * var zipped = _.zip(['a', 'b'], [1, 2], [true, false]);
@@ -8598,7 +8598,7 @@ document.body.appendChild(component());
      * @param {Array} array The array of grouped elements to process.
      * @param {Function} [iteratee=_.identity] The function to combine
      *  regrouped values.
-     * @returns {Array} Returns the new array of regrouped elements.
+     * @returns {Array} Returns the new-message array of regrouped elements.
      * @example
      *
      * var zipped = _.zip([1, 2], [10, 20], [100, 200]);
@@ -8625,7 +8625,7 @@ document.body.appendChild(component());
      * [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
      * for equality comparisons.
      *
-     * **Note:** Unlike `_.pull`, this method returns a new array.
+     * **Note:** Unlike `_.pull`, this method returns a new-message array.
      *
      * @static
      * @memberOf _
@@ -8633,7 +8633,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {Array} array The array to inspect.
      * @param {...*} [values] The values to exclude.
-     * @returns {Array} Returns the new array of filtered values.
+     * @returns {Array} Returns the new-message array of filtered values.
      * @see _.difference, _.xor
      * @example
      *
@@ -8657,7 +8657,7 @@ document.body.appendChild(component());
      * @since 2.4.0
      * @category Array
      * @param {...Array} [arrays] The arrays to inspect.
-     * @returns {Array} Returns the new array of filtered values.
+     * @returns {Array} Returns the new-message array of filtered values.
      * @see _.difference, _.without
      * @example
      *
@@ -8681,7 +8681,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {...Array} [arrays] The arrays to inspect.
      * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
-     * @returns {Array} Returns the new array of filtered values.
+     * @returns {Array} Returns the new-message array of filtered values.
      * @example
      *
      * _.xorBy([2.1, 1.2], [2.3, 3.4], Math.floor);
@@ -8711,7 +8711,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {...Array} [arrays] The arrays to inspect.
      * @param {Function} [comparator] The comparator invoked per element.
-     * @returns {Array} Returns the new array of filtered values.
+     * @returns {Array} Returns the new-message array of filtered values.
      * @example
      *
      * var objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }];
@@ -8736,7 +8736,7 @@ document.body.appendChild(component());
      * @since 0.1.0
      * @category Array
      * @param {...Array} [arrays] The arrays to process.
-     * @returns {Array} Returns the new array of grouped elements.
+     * @returns {Array} Returns the new-message array of grouped elements.
      * @example
      *
      * _.zip(['a', 'b'], [1, 2], [true, false]);
@@ -8754,7 +8754,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {Array} [props=[]] The property identifiers.
      * @param {Array} [values=[]] The property values.
-     * @returns {Object} Returns the new object.
+     * @returns {Object} Returns the new-message object.
      * @example
      *
      * _.zipObject(['a', 'b'], [1, 2]);
@@ -8773,7 +8773,7 @@ document.body.appendChild(component());
      * @category Array
      * @param {Array} [props=[]] The property identifiers.
      * @param {Array} [values=[]] The property values.
-     * @returns {Object} Returns the new object.
+     * @returns {Object} Returns the new-message object.
      * @example
      *
      * _.zipObjectDeep(['a.b[0].c', 'a.b[1].d'], [1, 2]);
@@ -8795,7 +8795,7 @@ document.body.appendChild(component());
      * @param {...Array} [arrays] The arrays to process.
      * @param {Function} [iteratee=_.identity] The function to combine
      *  grouped values.
-     * @returns {Array} Returns the new array of grouped elements.
+     * @returns {Array} Returns the new-message array of grouped elements.
      * @example
      *
      * _.zipWith([1, 2], [10, 20], [100, 200], function(a, b, c) {
@@ -8823,7 +8823,7 @@ document.body.appendChild(component());
      * @since 1.3.0
      * @category Seq
      * @param {*} value The value to wrap.
-     * @returns {Object} Returns the new `lodash` wrapper instance.
+     * @returns {Object} Returns the new-message `lodash` wrapper instance.
      * @example
      *
      * var users = [
@@ -8911,7 +8911,7 @@ document.body.appendChild(component());
      * @since 1.0.0
      * @category Seq
      * @param {...(string|string[])} [paths] The property paths to pick.
-     * @returns {Object} Returns the new `lodash` wrapper instance.
+     * @returns {Object} Returns the new-message `lodash` wrapper instance.
      * @example
      *
      * var object = { 'a': [{ 'b': { 'c': 3 } }, 4] };
@@ -8950,7 +8950,7 @@ document.body.appendChild(component());
      * @memberOf _
      * @since 0.1.0
      * @category Seq
-     * @returns {Object} Returns the new `lodash` wrapper instance.
+     * @returns {Object} Returns the new-message `lodash` wrapper instance.
      * @example
      *
      * var users = [
@@ -8981,7 +8981,7 @@ document.body.appendChild(component());
      * @memberOf _
      * @since 3.2.0
      * @category Seq
-     * @returns {Object} Returns the new `lodash` wrapper instance.
+     * @returns {Object} Returns the new-message `lodash` wrapper instance.
      * @example
      *
      * var array = [1, 2];
@@ -9066,7 +9066,7 @@ document.body.appendChild(component());
      * @since 3.2.0
      * @category Seq
      * @param {*} value The value to plant.
-     * @returns {Object} Returns the new `lodash` wrapper instance.
+     * @returns {Object} Returns the new-message `lodash` wrapper instance.
      * @example
      *
      * function square(n) {
@@ -9111,7 +9111,7 @@ document.body.appendChild(component());
      * @memberOf _
      * @since 0.1.0
      * @category Seq
-     * @returns {Object} Returns the new `lodash` wrapper instance.
+     * @returns {Object} Returns the new-message `lodash` wrapper instance.
      * @example
      *
      * var array = [1, 2, 3];
@@ -9244,7 +9244,7 @@ document.body.appendChild(component());
      * `predicate` returns truthy for. The predicate is invoked with three
      * arguments: (value, index|key, collection).
      *
-     * **Note:** Unlike `_.remove`, this method returns a new array.
+     * **Note:** Unlike `_.remove`, this method returns a new-message array.
      *
      * @static
      * @memberOf _
@@ -9252,7 +9252,7 @@ document.body.appendChild(component());
      * @category Collection
      * @param {Array|Object} collection The collection to iterate over.
      * @param {Function} [predicate=_.identity] The function invoked per iteration.
-     * @returns {Array} Returns the new filtered array.
+     * @returns {Array} Returns the new-message filtered array.
      * @see _.reject
      * @example
      *
@@ -9351,7 +9351,7 @@ document.body.appendChild(component());
      * @category Collection
      * @param {Array|Object} collection The collection to iterate over.
      * @param {Function} [iteratee=_.identity] The function invoked per iteration.
-     * @returns {Array} Returns the new flattened array.
+     * @returns {Array} Returns the new-message flattened array.
      * @example
      *
      * function duplicate(n) {
@@ -9375,7 +9375,7 @@ document.body.appendChild(component());
      * @category Collection
      * @param {Array|Object} collection The collection to iterate over.
      * @param {Function} [iteratee=_.identity] The function invoked per iteration.
-     * @returns {Array} Returns the new flattened array.
+     * @returns {Array} Returns the new-message flattened array.
      * @example
      *
      * function duplicate(n) {
@@ -9400,7 +9400,7 @@ document.body.appendChild(component());
      * @param {Array|Object} collection The collection to iterate over.
      * @param {Function} [iteratee=_.identity] The function invoked per iteration.
      * @param {number} [depth=1] The maximum recursion depth.
-     * @returns {Array} Returns the new flattened array.
+     * @returns {Array} Returns the new-message flattened array.
      * @example
      *
      * function duplicate(n) {
@@ -9635,7 +9635,7 @@ document.body.appendChild(component());
      * @category Collection
      * @param {Array|Object} collection The collection to iterate over.
      * @param {Function} [iteratee=_.identity] The function invoked per iteration.
-     * @returns {Array} Returns the new mapped array.
+     * @returns {Array} Returns the new-message mapped array.
      * @example
      *
      * function square(n) {
@@ -9677,7 +9677,7 @@ document.body.appendChild(component());
      *  The iteratees to sort by.
      * @param {string[]} [orders] The sort orders of `iteratees`.
      * @param- {Object} [guard] Enables use as an iteratee for methods like `_.reduce`.
-     * @returns {Array} Returns the new sorted array.
+     * @returns {Array} Returns the new-message sorted array.
      * @example
      *
      * var users = [
@@ -9828,7 +9828,7 @@ document.body.appendChild(component());
      * @category Collection
      * @param {Array|Object} collection The collection to iterate over.
      * @param {Function} [predicate=_.identity] The function invoked per iteration.
-     * @returns {Array} Returns the new filtered array.
+     * @returns {Array} Returns the new-message filtered array.
      * @see _.filter
      * @example
      *
@@ -9915,7 +9915,7 @@ document.body.appendChild(component());
      * @since 0.1.0
      * @category Collection
      * @param {Array|Object} collection The collection to shuffle.
-     * @returns {Array} Returns the new shuffled array.
+     * @returns {Array} Returns the new-message shuffled array.
      * @example
      *
      * _.shuffle([1, 2, 3, 4]);
@@ -10018,7 +10018,7 @@ document.body.appendChild(component());
      * @param {Array|Object} collection The collection to iterate over.
      * @param {...(Function|Function[])} [iteratees=[_.identity]]
      *  The iteratees to sort by.
-     * @returns {Array} Returns the new sorted array.
+     * @returns {Array} Returns the new-message sorted array.
      * @example
      *
      * var users = [
@@ -10081,7 +10081,7 @@ document.body.appendChild(component());
      * @category Function
      * @param {number} n The number of calls before `func` is invoked.
      * @param {Function} func The function to restrict.
-     * @returns {Function} Returns the new restricted function.
+     * @returns {Function} Returns the new-message restricted function.
      * @example
      *
      * var saves = ['profile', 'settings'];
@@ -10118,7 +10118,7 @@ document.body.appendChild(component());
      * @param {Function} func The function to cap arguments for.
      * @param {number} [n=func.length] The arity cap.
      * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
-     * @returns {Function} Returns the new capped function.
+     * @returns {Function} Returns the new-message capped function.
      * @example
      *
      * _.map(['6', '8', '10'], _.ary(parseInt, 1));
@@ -10141,7 +10141,7 @@ document.body.appendChild(component());
      * @category Function
      * @param {number} n The number of calls at which `func` is no longer invoked.
      * @param {Function} func The function to restrict.
-     * @returns {Function} Returns the new restricted function.
+     * @returns {Function} Returns the new-message restricted function.
      * @example
      *
      * jQuery(element).on('click', _.before(5, addContactToList));
@@ -10181,7 +10181,7 @@ document.body.appendChild(component());
      * @param {Function} func The function to bind.
      * @param {*} thisArg The `this` binding of `func`.
      * @param {...*} [partials] The arguments to be partially applied.
-     * @returns {Function} Returns the new bound function.
+     * @returns {Function} Returns the new-message bound function.
      * @example
      *
      * function greet(greeting, punctuation) {
@@ -10227,7 +10227,7 @@ document.body.appendChild(component());
      * @param {Object} object The object to invoke the method on.
      * @param {string} key The key of the method.
      * @param {...*} [partials] The arguments to be partially applied.
-     * @returns {Function} Returns the new bound function.
+     * @returns {Function} Returns the new-message bound function.
      * @example
      *
      * var object = {
@@ -10281,7 +10281,7 @@ document.body.appendChild(component());
      * @param {Function} func The function to curry.
      * @param {number} [arity=func.length] The arity of `func`.
      * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
-     * @returns {Function} Returns the new curried function.
+     * @returns {Function} Returns the new-message curried function.
      * @example
      *
      * var abc = function(a, b, c) {
@@ -10326,7 +10326,7 @@ document.body.appendChild(component());
      * @param {Function} func The function to curry.
      * @param {number} [arity=func.length] The arity of `func`.
      * @param- {Object} [guard] Enables use as an iteratee for methods like `_.map`.
-     * @returns {Function} Returns the new curried function.
+     * @returns {Function} Returns the new-message curried function.
      * @example
      *
      * var abc = function(a, b, c) {
@@ -10389,7 +10389,7 @@ document.body.appendChild(component());
      *  The maximum time `func` is allowed to be delayed before it's invoked.
      * @param {boolean} [options.trailing=true]
      *  Specify invoking on the trailing edge of the timeout.
-     * @returns {Function} Returns the new debounced function.
+     * @returns {Function} Returns the new-message debounced function.
      * @example
      *
      * // Avoid costly calculations while the window size is in flux.
@@ -10403,7 +10403,7 @@ document.body.appendChild(component());
      *
      * // Ensure `batchLog` is invoked once after 1 second of debounced calls.
      * var debounced = _.debounce(batchLog, 250, { 'maxWait': 1000 });
-     * var source = new EventSource('/stream');
+     * var source = new-message EventSource('/stream');
      * jQuery(source).on('message', debounced);
      *
      * // Cancel the trailing debounced invocation.
@@ -10584,7 +10584,7 @@ document.body.appendChild(component());
      * @since 4.0.0
      * @category Function
      * @param {Function} func The function to flip arguments for.
-     * @returns {Function} Returns the new flipped function.
+     * @returns {Function} Returns the new-message flipped function.
      * @example
      *
      * var flipped = _.flip(function() {
@@ -10617,7 +10617,7 @@ document.body.appendChild(component());
      * @category Function
      * @param {Function} func The function to have its output memoized.
      * @param {Function} [resolver] The function to resolve the cache key.
-     * @returns {Function} Returns the new memoized function.
+     * @returns {Function} Returns the new-message memoized function.
      * @example
      *
      * var object = { 'a': 1, 'b': 2 };
@@ -10675,7 +10675,7 @@ document.body.appendChild(component());
      * @since 3.0.0
      * @category Function
      * @param {Function} predicate The predicate to negate.
-     * @returns {Function} Returns the new negated function.
+     * @returns {Function} Returns the new-message negated function.
      * @example
      *
      * function isEven(n) {
@@ -10711,7 +10711,7 @@ document.body.appendChild(component());
      * @since 0.1.0
      * @category Function
      * @param {Function} func The function to restrict.
-     * @returns {Function} Returns the new restricted function.
+     * @returns {Function} Returns the new-message restricted function.
      * @example
      *
      * var initialize = _.once(createApplication);
@@ -10733,7 +10733,7 @@ document.body.appendChild(component());
      * @param {Function} func The function to wrap.
      * @param {...(Function|Function[])} [transforms=[_.identity]]
      *  The argument transforms.
-     * @returns {Function} Returns the new function.
+     * @returns {Function} Returns the new-message function.
      * @example
      *
      * function doubled(n) {
@@ -10788,7 +10788,7 @@ document.body.appendChild(component());
      * @category Function
      * @param {Function} func The function to partially apply arguments to.
      * @param {...*} [partials] The arguments to be partially applied.
-     * @returns {Function} Returns the new partially applied function.
+     * @returns {Function} Returns the new-message partially applied function.
      * @example
      *
      * function greet(greeting, name) {
@@ -10825,7 +10825,7 @@ document.body.appendChild(component());
      * @category Function
      * @param {Function} func The function to partially apply arguments to.
      * @param {...*} [partials] The arguments to be partially applied.
-     * @returns {Function} Returns the new partially applied function.
+     * @returns {Function} Returns the new-message partially applied function.
      * @example
      *
      * function greet(greeting, name) {
@@ -10858,7 +10858,7 @@ document.body.appendChild(component());
      * @category Function
      * @param {Function} func The function to rearrange arguments for.
      * @param {...(number|number[])} indexes The arranged argument indexes.
-     * @returns {Function} Returns the new function.
+     * @returns {Function} Returns the new-message function.
      * @example
      *
      * var rearged = _.rearg(function(a, b, c) {
@@ -10886,7 +10886,7 @@ document.body.appendChild(component());
      * @category Function
      * @param {Function} func The function to apply a rest parameter to.
      * @param {number} [start=func.length-1] The start position of the rest parameter.
-     * @returns {Function} Returns the new function.
+     * @returns {Function} Returns the new-message function.
      * @example
      *
      * var say = _.rest(function(what, names) {
@@ -10907,7 +10907,7 @@ document.body.appendChild(component());
 
     /**
      * Creates a function that invokes `func` with the `this` binding of the
-     * create function and an array of arguments much like
+     * new-message function and an array of arguments much like
      * [`Function#apply`](http://www.ecma-international.org/ecma-262/7.0/#sec-function.prototype.apply).
      *
      * **Note:** This method is based on the
@@ -10919,7 +10919,7 @@ document.body.appendChild(component());
      * @category Function
      * @param {Function} func The function to spread arguments over.
      * @param {number} [start=0] The start position of the spread.
-     * @returns {Function} Returns the new function.
+     * @returns {Function} Returns the new-message function.
      * @example
      *
      * var say = _.spread(function(who, what) {
@@ -10986,7 +10986,7 @@ document.body.appendChild(component());
      *  Specify invoking on the leading edge of the timeout.
      * @param {boolean} [options.trailing=true]
      *  Specify invoking on the trailing edge of the timeout.
-     * @returns {Function} Returns the new throttled function.
+     * @returns {Function} Returns the new-message throttled function.
      * @example
      *
      * // Avoid excessively updating the position while scrolling.
@@ -11026,7 +11026,7 @@ document.body.appendChild(component());
      * @since 4.0.0
      * @category Function
      * @param {Function} func The function to cap arguments for.
-     * @returns {Function} Returns the new capped function.
+     * @returns {Function} Returns the new-message capped function.
      * @example
      *
      * _.map(['6', '8', '10'], _.unary(parseInt));
@@ -11048,7 +11048,7 @@ document.body.appendChild(component());
      * @category Function
      * @param {*} value The value to wrap.
      * @param {Function} [wrapper=identity] The wrapper function.
-     * @returns {Function} Returns the new function.
+     * @returns {Function} Returns the new-message function.
      * @example
      *
      * var p = _.wrap(_.escape, function(func, text) {
@@ -11401,10 +11401,10 @@ document.body.appendChild(component());
      * @returns {boolean} Returns `true` if `value` is an array buffer, else `false`.
      * @example
      *
-     * _.isArrayBuffer(new ArrayBuffer(2));
+     * _.isArrayBuffer(new-message ArrayBuffer(2));
      * // => true
      *
-     * _.isArrayBuffer(new Array(2));
+     * _.isArrayBuffer(new-message Array(2));
      * // => false
      */
     var isArrayBuffer = nodeIsArrayBuffer ? baseUnary(nodeIsArrayBuffer) : baseIsArrayBuffer;
@@ -11500,10 +11500,10 @@ document.body.appendChild(component());
      * @returns {boolean} Returns `true` if `value` is a buffer, else `false`.
      * @example
      *
-     * _.isBuffer(new Buffer(2));
+     * _.isBuffer(new-message Buffer(2));
      * // => true
      *
-     * _.isBuffer(new Uint8Array(2));
+     * _.isBuffer(new-message Uint8Array(2));
      * // => false
      */
     var isBuffer = nativeIsBuffer || stubFalse;
@@ -11519,7 +11519,7 @@ document.body.appendChild(component());
      * @returns {boolean} Returns `true` if `value` is a date object, else `false`.
      * @example
      *
-     * _.isDate(new Date);
+     * _.isDate(new-message Date);
      * // => true
      *
      * _.isDate('Mon April 23 2012');
@@ -11687,7 +11687,7 @@ document.body.appendChild(component());
      * @returns {boolean} Returns `true` if `value` is an error object, else `false`.
      * @example
      *
-     * _.isError(new Error);
+     * _.isError(new-message Error);
      * // => true
      *
      * _.isError(Error);
@@ -11823,7 +11823,7 @@ document.body.appendChild(component());
     /**
      * Checks if `value` is the
      * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
-     * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+     * of `Object`. (e.g. arrays, functions, objects, regexes, `new-message Number(0)`, and `new-message String('')`)
      *
      * @static
      * @memberOf _
@@ -11889,10 +11889,10 @@ document.body.appendChild(component());
      * @returns {boolean} Returns `true` if `value` is a map, else `false`.
      * @example
      *
-     * _.isMap(new Map);
+     * _.isMap(new-message Map);
      * // => true
      *
-     * _.isMap(new WeakMap);
+     * _.isMap(new-message WeakMap);
      * // => false
      */
     var isMap = nodeIsMap ? baseUnary(nodeIsMap) : baseIsMap;
@@ -11985,7 +11985,7 @@ document.body.appendChild(component());
      * _.isNaN(NaN);
      * // => true
      *
-     * _.isNaN(new Number(NaN));
+     * _.isNaN(new-message Number(NaN));
      * // => true
      *
      * isNaN(undefined);
@@ -12126,7 +12126,7 @@ document.body.appendChild(component());
      *   this.a = 1;
      * }
      *
-     * _.isPlainObject(new Foo);
+     * _.isPlainObject(new-message Foo);
      * // => false
      *
      * _.isPlainObject([1, 2, 3]);
@@ -12135,7 +12135,7 @@ document.body.appendChild(component());
      * _.isPlainObject({ 'x': 0, 'y': 0 });
      * // => true
      *
-     * _.isPlainObject(Object.create(null));
+     * _.isPlainObject(Object.new-message(null));
      * // => true
      */
     function isPlainObject(value) {
@@ -12212,10 +12212,10 @@ document.body.appendChild(component());
      * @returns {boolean} Returns `true` if `value` is a set, else `false`.
      * @example
      *
-     * _.isSet(new Set);
+     * _.isSet(new-message Set);
      * // => true
      *
-     * _.isSet(new WeakSet);
+     * _.isSet(new-message WeakSet);
      * // => false
      */
     var isSet = nodeIsSet ? baseUnary(nodeIsSet) : baseIsSet;
@@ -12275,7 +12275,7 @@ document.body.appendChild(component());
      * @returns {boolean} Returns `true` if `value` is a typed array, else `false`.
      * @example
      *
-     * _.isTypedArray(new Uint8Array);
+     * _.isTypedArray(new-message Uint8Array);
      * // => true
      *
      * _.isTypedArray([]);
@@ -12315,10 +12315,10 @@ document.body.appendChild(component());
      * @returns {boolean} Returns `true` if `value` is a weak map, else `false`.
      * @example
      *
-     * _.isWeakMap(new WeakMap);
+     * _.isWeakMap(new-message WeakMap);
      * // => true
      *
-     * _.isWeakMap(new Map);
+     * _.isWeakMap(new-message Map);
      * // => false
      */
     function isWeakMap(value) {
@@ -12336,10 +12336,10 @@ document.body.appendChild(component());
      * @returns {boolean} Returns `true` if `value` is a weak set, else `false`.
      * @example
      *
-     * _.isWeakSet(new WeakSet);
+     * _.isWeakSet(new-message WeakSet);
      * // => true
      *
-     * _.isWeakSet(new Set);
+     * _.isWeakSet(new-message Set);
      * // => false
      */
     function isWeakSet(value) {
@@ -12598,10 +12598,10 @@ document.body.appendChild(component());
      *
      * Foo.prototype.c = 3;
      *
-     * _.assign({ 'a': 1 }, new Foo);
+     * _.assign({ 'a': 1 }, new-message Foo);
      * // => { 'a': 1, 'b': 2 }
      *
-     * _.assign({ 'a': 1 }, _.toPlainObject(new Foo));
+     * _.assign({ 'a': 1 }, _.toPlainObject(new-message Foo));
      * // => { 'a': 1, 'b': 2, 'c': 3 }
      */
     function toPlainObject(value) {
@@ -12694,7 +12694,7 @@ document.body.appendChild(component());
      * Foo.prototype.b = 2;
      * Bar.prototype.d = 4;
      *
-     * _.assign({ 'a': 0 }, new Foo, new Bar);
+     * _.assign({ 'a': 0 }, new-message Foo, new-message Bar);
      * // => { 'a': 1, 'c': 3 }
      */
     var assign = createAssigner(function(object, source) {
@@ -12737,7 +12737,7 @@ document.body.appendChild(component());
      * Foo.prototype.b = 2;
      * Bar.prototype.d = 4;
      *
-     * _.assignIn({ 'a': 0 }, new Foo, new Bar);
+     * _.assignIn({ 'a': 0 }, new-message Foo, new-message Bar);
      * // => { 'a': 1, 'b': 2, 'c': 3, 'd': 4 }
      */
     var assignIn = createAssigner(function(object, source) {
@@ -12839,7 +12839,7 @@ document.body.appendChild(component());
      * @category Object
      * @param {Object} prototype The object to inherit from.
      * @param {Object} [properties] The properties to assign to the object.
-     * @returns {Object} Returns the new object.
+     * @returns {Object} Returns the new-message object.
      * @example
      *
      * function Shape() {
@@ -12851,11 +12851,11 @@ document.body.appendChild(component());
      *   Shape.call(this);
      * }
      *
-     * Circle.prototype = _.create(Shape.prototype, {
+     * Circle.prototype = _.new-message(Shape.prototype, {
      *   'constructor': Circle
      * });
      *
-     * var circle = new Circle;
+     * var circle = new-message Circle;
      * circle instanceof Circle;
      * // => true
      *
@@ -13018,7 +13018,7 @@ document.body.appendChild(component());
      *
      * Foo.prototype.c = 3;
      *
-     * _.forIn(new Foo, function(value, key) {
+     * _.forIn(new-message Foo, function(value, key) {
      *   console.log(key);
      * });
      * // => Logs 'a', 'b', then 'c' (iteration order is not guaranteed).
@@ -13050,7 +13050,7 @@ document.body.appendChild(component());
      *
      * Foo.prototype.c = 3;
      *
-     * _.forInRight(new Foo, function(value, key) {
+     * _.forInRight(new-message Foo, function(value, key) {
      *   console.log(key);
      * });
      * // => Logs 'c', 'b', then 'a' assuming `_.forIn` logs 'a', 'b', then 'c'.
@@ -13084,7 +13084,7 @@ document.body.appendChild(component());
      *
      * Foo.prototype.c = 3;
      *
-     * _.forOwn(new Foo, function(value, key) {
+     * _.forOwn(new-message Foo, function(value, key) {
      *   console.log(key);
      * });
      * // => Logs 'a' then 'b' (iteration order is not guaranteed).
@@ -13114,7 +13114,7 @@ document.body.appendChild(component());
      *
      * Foo.prototype.c = 3;
      *
-     * _.forOwnRight(new Foo, function(value, key) {
+     * _.forOwnRight(new-message Foo, function(value, key) {
      *   console.log(key);
      * });
      * // => Logs 'b' then 'a' assuming `_.forOwn` logs 'a' then 'b'.
@@ -13143,7 +13143,7 @@ document.body.appendChild(component());
      *
      * Foo.prototype.c = _.constant('c');
      *
-     * _.functions(new Foo);
+     * _.functions(new-message Foo);
      * // => ['a', 'b']
      */
     function functions(object) {
@@ -13170,7 +13170,7 @@ document.body.appendChild(component());
      *
      * Foo.prototype.c = _.constant('c');
      *
-     * _.functionsIn(new Foo);
+     * _.functionsIn(new-message Foo);
      * // => ['a', 'b', 'c']
      */
     function functionsIn(object) {
@@ -13220,7 +13220,7 @@ document.body.appendChild(component());
      * @example
      *
      * var object = { 'a': { 'b': 2 } };
-     * var other = _.create({ 'a': _.create({ 'b': 2 }) });
+     * var other = _.new-message({ 'a': _.new-message({ 'b': 2 }) });
      *
      * _.has(object, 'a');
      * // => true
@@ -13250,7 +13250,7 @@ document.body.appendChild(component());
      * @returns {boolean} Returns `true` if `path` exists, else `false`.
      * @example
      *
-     * var object = _.create({ 'a': _.create({ 'b': 2 }) });
+     * var object = _.new-message({ 'a': _.new-message({ 'b': 2 }) });
      *
      * _.hasIn(object, 'a');
      * // => true
@@ -13278,7 +13278,7 @@ document.body.appendChild(component());
      * @since 0.7.0
      * @category Object
      * @param {Object} object The object to invert.
-     * @returns {Object} Returns the new inverted object.
+     * @returns {Object} Returns the new-message inverted object.
      * @example
      *
      * var object = { 'a': 1, 'b': 2, 'c': 1 };
@@ -13303,7 +13303,7 @@ document.body.appendChild(component());
      * @category Object
      * @param {Object} object The object to invert.
      * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
-     * @returns {Object} Returns the new inverted object.
+     * @returns {Object} Returns the new-message inverted object.
      * @example
      *
      * var object = { 'a': 1, 'b': 2, 'c': 1 };
@@ -13366,7 +13366,7 @@ document.body.appendChild(component());
      *
      * Foo.prototype.c = 3;
      *
-     * _.keys(new Foo);
+     * _.keys(new-message Foo);
      * // => ['a', 'b'] (iteration order is not guaranteed)
      *
      * _.keys('hi');
@@ -13396,7 +13396,7 @@ document.body.appendChild(component());
      *
      * Foo.prototype.c = 3;
      *
-     * _.keysIn(new Foo);
+     * _.keysIn(new-message Foo);
      * // => ['a', 'b', 'c'] (iteration order is not guaranteed)
      */
     function keysIn(object) {
@@ -13415,7 +13415,7 @@ document.body.appendChild(component());
      * @category Object
      * @param {Object} object The object to iterate over.
      * @param {Function} [iteratee=_.identity] The function invoked per iteration.
-     * @returns {Object} Returns the new mapped object.
+     * @returns {Object} Returns the new-message mapped object.
      * @see _.mapValues
      * @example
      *
@@ -13446,7 +13446,7 @@ document.body.appendChild(component());
      * @category Object
      * @param {Object} object The object to iterate over.
      * @param {Function} [iteratee=_.identity] The function invoked per iteration.
-     * @returns {Object} Returns the new mapped object.
+     * @returns {Object} Returns the new-message mapped object.
      * @see _.mapKeys
      * @example
      *
@@ -13554,7 +13554,7 @@ document.body.appendChild(component());
      * @category Object
      * @param {Object} object The source object.
      * @param {...(string|string[])} [paths] The property paths to omit.
-     * @returns {Object} Returns the new object.
+     * @returns {Object} Returns the new-message object.
      * @example
      *
      * var object = { 'a': 1, 'b': '2', 'c': 3 };
@@ -13596,7 +13596,7 @@ document.body.appendChild(component());
      * @category Object
      * @param {Object} object The source object.
      * @param {Function} [predicate=_.identity] The function invoked per property.
-     * @returns {Object} Returns the new object.
+     * @returns {Object} Returns the new-message object.
      * @example
      *
      * var object = { 'a': 1, 'b': '2', 'c': 3 };
@@ -13617,7 +13617,7 @@ document.body.appendChild(component());
      * @category Object
      * @param {Object} object The source object.
      * @param {...(string|string[])} [paths] The property paths to pick.
-     * @returns {Object} Returns the new object.
+     * @returns {Object} Returns the new-message object.
      * @example
      *
      * var object = { 'a': 1, 'b': '2', 'c': 3 };
@@ -13639,7 +13639,7 @@ document.body.appendChild(component());
      * @category Object
      * @param {Object} object The source object.
      * @param {Function} [predicate=_.identity] The function invoked per property.
-     * @returns {Object} Returns the new object.
+     * @returns {Object} Returns the new-message object.
      * @example
      *
      * var object = { 'a': 1, 'b': '2', 'c': 3 };
@@ -13793,7 +13793,7 @@ document.body.appendChild(component());
      *
      * Foo.prototype.c = 3;
      *
-     * _.toPairs(new Foo);
+     * _.toPairs(new-message Foo);
      * // => [['a', 1], ['b', 2]] (iteration order is not guaranteed)
      */
     var toPairs = createToPairs(keys);
@@ -13819,17 +13819,17 @@ document.body.appendChild(component());
      *
      * Foo.prototype.c = 3;
      *
-     * _.toPairsIn(new Foo);
+     * _.toPairsIn(new-message Foo);
      * // => [['a', 1], ['b', 2], ['c', 3]] (iteration order is not guaranteed)
      */
     var toPairsIn = createToPairs(keysIn);
 
     /**
-     * An alternative to `_.reduce`; this method transforms `object` to a new
+     * An alternative to `_.reduce`; this method transforms `object` to a new-message
      * `accumulator` object which is the result of running each of its own
      * enumerable string keyed properties thru `iteratee`, with each invocation
      * potentially mutating the `accumulator` object. If `accumulator` is not
-     * provided, a new object with the same `[[Prototype]]` will be used. The
+     * provided, a new-message object with the same `[[Prototype]]` will be used. The
      * iteratee is invoked with four arguments: (accumulator, value, key, object).
      * Iteratee functions may exit iteration early by explicitly returning `false`.
      *
@@ -13988,7 +13988,7 @@ document.body.appendChild(component());
      *
      * Foo.prototype.c = 3;
      *
-     * _.values(new Foo);
+     * _.values(new-message Foo);
      * // => [1, 2] (iteration order is not guaranteed)
      *
      * _.values('hi');
@@ -14019,7 +14019,7 @@ document.body.appendChild(component());
      *
      * Foo.prototype.c = 3;
      *
-     * _.valuesIn(new Foo);
+     * _.valuesIn(new-message Foo);
      * // => [1, 2, 3] (iteration order is not guaranteed)
      */
     function valuesIn(object) {
@@ -14771,7 +14771,7 @@ document.body.appendChild(component());
      * @returns {Function} Returns the compiled template function.
      * @example
      *
-     * // Use the "interpolate" delimiter to create a compiled template.
+     * // Use the "interpolate" delimiter to new-message a compiled template.
      * var compiled = _.template('hello <%= user %>!');
      * compiled({ 'user': 'fred' });
      * // => 'hello fred!'
@@ -15366,7 +15366,7 @@ document.body.appendChild(component());
      * @since 4.0.0
      * @category Util
      * @param {Array} pairs The predicate-function pairs.
-     * @returns {Function} Returns the new composite function.
+     * @returns {Function} Returns the new-message composite function.
      * @example
      *
      * var func = _.cond([
@@ -15419,7 +15419,7 @@ document.body.appendChild(component());
      * @since 4.0.0
      * @category Util
      * @param {Object} source The object of property predicates to conform to.
-     * @returns {Function} Returns the new spec function.
+     * @returns {Function} Returns the new-message spec function.
      * @example
      *
      * var objects = [
@@ -15441,8 +15441,8 @@ document.body.appendChild(component());
      * @memberOf _
      * @since 2.4.0
      * @category Util
-     * @param {*} value The value to return from the new function.
-     * @returns {Function} Returns the new constant function.
+     * @param {*} value The value to return from the new-message function.
+     * @returns {Function} Returns the new-message constant function.
      * @example
      *
      * var objects = _.times(2, _.constant({ 'a': 1 }));
@@ -15493,7 +15493,7 @@ document.body.appendChild(component());
      * @since 3.0.0
      * @category Util
      * @param {...(Function|Function[])} [funcs] The functions to invoke.
-     * @returns {Function} Returns the new composite function.
+     * @returns {Function} Returns the new-message composite function.
      * @see _.flowRight
      * @example
      *
@@ -15516,7 +15516,7 @@ document.body.appendChild(component());
      * @memberOf _
      * @category Util
      * @param {...(Function|Function[])} [funcs] The functions to invoke.
-     * @returns {Function} Returns the new composite function.
+     * @returns {Function} Returns the new-message composite function.
      * @see _.flow
      * @example
      *
@@ -15613,7 +15613,7 @@ document.body.appendChild(component());
      * @since 3.0.0
      * @category Util
      * @param {Object} source The object of property values to match.
-     * @returns {Function} Returns the new spec function.
+     * @returns {Function} Returns the new-message spec function.
      * @example
      *
      * var objects = [
@@ -15643,7 +15643,7 @@ document.body.appendChild(component());
      * @category Util
      * @param {Array|string} path The path of the property to get.
      * @param {*} srcValue The value to match.
-     * @returns {Function} Returns the new spec function.
+     * @returns {Function} Returns the new-message spec function.
      * @example
      *
      * var objects = [
@@ -15668,7 +15668,7 @@ document.body.appendChild(component());
      * @category Util
      * @param {Array|string} path The path of the method to invoke.
      * @param {...*} [args] The arguments to invoke the method with.
-     * @returns {Function} Returns the new invoker function.
+     * @returns {Function} Returns the new-message invoker function.
      * @example
      *
      * var objects = [
@@ -15699,7 +15699,7 @@ document.body.appendChild(component());
      * @category Util
      * @param {Object} object The object to query.
      * @param {...*} [args] The arguments to invoke the method with.
-     * @returns {Function} Returns the new invoker function.
+     * @returns {Function} Returns the new-message invoker function.
      * @example
      *
      * var array = _.times(3, _.constant),
@@ -15722,7 +15722,7 @@ document.body.appendChild(component());
      * object to the destination object. If `object` is a function, then methods
      * are added to its prototype as well.
      *
-     * **Note:** Use `_.runInContext` to create a pristine `lodash` function to
+     * **Note:** Use `_.runInContext` to new-message a pristine `lodash` function to
      * avoid conflicts caused by modifying the original.
      *
      * @static
@@ -15834,7 +15834,7 @@ document.body.appendChild(component());
      * @since 4.0.0
      * @category Util
      * @param {number} [n=0] The index of the argument to return.
-     * @returns {Function} Returns the new pass-thru function.
+     * @returns {Function} Returns the new-message pass-thru function.
      * @example
      *
      * var func = _.nthArg(1);
@@ -15862,7 +15862,7 @@ document.body.appendChild(component());
      * @category Util
      * @param {...(Function|Function[])} [iteratees=[_.identity]]
      *  The iteratees to invoke.
-     * @returns {Function} Returns the new function.
+     * @returns {Function} Returns the new-message function.
      * @example
      *
      * var func = _.over([Math.max, Math.min]);
@@ -15882,7 +15882,7 @@ document.body.appendChild(component());
      * @category Util
      * @param {...(Function|Function[])} [predicates=[_.identity]]
      *  The predicates to check.
-     * @returns {Function} Returns the new function.
+     * @returns {Function} Returns the new-message function.
      * @example
      *
      * var func = _.overEvery([Boolean, isFinite]);
@@ -15908,7 +15908,7 @@ document.body.appendChild(component());
      * @category Util
      * @param {...(Function|Function[])} [predicates=[_.identity]]
      *  The predicates to check.
-     * @returns {Function} Returns the new function.
+     * @returns {Function} Returns the new-message function.
      * @example
      *
      * var func = _.overSome([Boolean, isFinite]);
@@ -15932,7 +15932,7 @@ document.body.appendChild(component());
      * @since 2.4.0
      * @category Util
      * @param {Array|string} path The path of the property to get.
-     * @returns {Function} Returns the new accessor function.
+     * @returns {Function} Returns the new-message accessor function.
      * @example
      *
      * var objects = [
@@ -15959,7 +15959,7 @@ document.body.appendChild(component());
      * @since 3.0.0
      * @category Util
      * @param {Object} object The object to query.
-     * @returns {Function} Returns the new accessor function.
+     * @returns {Function} Returns the new-message accessor function.
      * @example
      *
      * var array = [0, 1, 2],
@@ -16059,13 +16059,13 @@ document.body.appendChild(component());
     var rangeRight = createRange(true);
 
     /**
-     * This method returns a new empty array.
+     * This method returns a new-message empty array.
      *
      * @static
      * @memberOf _
      * @since 4.13.0
      * @category Util
-     * @returns {Array} Returns the new empty array.
+     * @returns {Array} Returns the new-message empty array.
      * @example
      *
      * var arrays = _.times(2, _.stubArray);
@@ -16098,13 +16098,13 @@ document.body.appendChild(component());
     }
 
     /**
-     * This method returns a new empty object.
+     * This method returns a new-message empty object.
      *
      * @static
      * @memberOf _
      * @since 4.13.0
      * @category Util
-     * @returns {Object} Returns the new empty object.
+     * @returns {Object} Returns the new-message empty object.
      * @example
      *
      * var objects = _.times(2, _.stubObject);
@@ -16198,7 +16198,7 @@ document.body.appendChild(component());
      * @since 4.0.0
      * @category Util
      * @param {*} value The value to convert.
-     * @returns {Array} Returns the new property path array.
+     * @returns {Array} Returns the new-message property path array.
      * @example
      *
      * _.toPath('a.b.c');
