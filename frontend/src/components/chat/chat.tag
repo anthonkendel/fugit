@@ -43,8 +43,8 @@
         });
 
         this.on('before-unmount', () => {
-            this.input.removeEventListener('input');
-            document.removeEventListener('keydown');
+            // this.input.removeEventListener('input');
+            // document.removeEventListener('keydown');
         });
 
         this.sendMessage = () => {
