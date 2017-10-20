@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --content-base dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +21,19 @@
   "bugs": {
     "url": "https://github.com/anthonkendel/fugit/issues"
   },
-  "homepage": "https://github.com/anthonkendel/fugit#readme"
+  "homepage": "https://github.com/anthonkendel/fugit#readme",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "lodash": "^4.17.4",
+    "riot": "^3.7.3",
+    "semantic-ui": "^2.2.13"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
+  }
 }
