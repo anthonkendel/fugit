@@ -1,4 +1,6 @@
 <app>
-    <h1> Fugit </h1>
-
+    <router>
+        <route path="/"><login /></route>
+        <route path="*"><h1> Not found </h1></route>
+    </router>
 </app>

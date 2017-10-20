@@ -1,9 +1,10 @@
+import 'riot-route/lib/tag';
 import riot from 'riot';
 
 // css
 import '../semantic/dist/semantic.min.css'
 
-// Riot files
+// riot
 import './app.tag';
 import './components/login/login.tag';
 
