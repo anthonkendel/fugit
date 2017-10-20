@@ -35,9 +35,10 @@
 
         this.useProfile = () => {
             this.user.authenticated = true;
-            const user = window.localStorage.getItem(c.FUGIT_USER);
+            const userData = window.localStorage.getItem(c.FUGIT_USER);
 
-            if (!user) {
+            if (!userData || (userData.username === this.user.username && userData.email === this.user.email)) {
+                this.user.authenticated = true;
                 window.localStorage.setItem(c.FUGIT_USER, JSON.stringify(this.user));
             }
         }

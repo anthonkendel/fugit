@@ -8,6 +8,7 @@ import '../semantic/dist/semantic.min.js';
 // riot
 import './app.tag';
 import './components/sidebar/siderbar.tag';
+import './components/auth/auth.tag';
 import './components/login/login.tag';
 import './components/login/login-modal.tag';
 
