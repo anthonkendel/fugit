@@ -28,17 +28,17 @@
     <script>
         import faker from 'faker';
         import User from '../../models/User';
+        import c from '../../shared/constants';
 
-        this.FUGIT_USER = 'FUGIT_USER';
         this.loading = false;
         this.user = new User();
 
         this.useProfile = () => {
             this.user.authenticated = true;
-            const FUGIT_USER = window.localStorage.getItem(this.FUGIT_USER);
+            const user = window.localStorage.getItem(c.FUGIT_USER);
 
-            if (!FUGIT_USER) {
-                window.localStorage.setItem(this.FUGIT_USER, JSON.stringify(this.user));
+            if (!user) {
+                window.localStorage.setItem(c.FUGIT_USER, JSON.stringify(this.user));
             }
         }
 
