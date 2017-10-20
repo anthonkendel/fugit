@@ -11,23 +11,25 @@
     </div>
 
     <script>
-    this.routes = [
-        {'text': 'General', 'route': '/#/home', 'active': true}
-    ];
+        import './sidebar.css';
 
-    this.setActiveElement = (mouseEvent) => {
-        this.routes.map((route) => route.active = false);
-        mouseEvent.item.active = true;
-    };
+        this.routes = [
+            {'text': 'General', 'route': '/#/home', 'active': true}
+        ];
 
-    this.createNewRoom = () => {
-        let index = this.routes.length;
+        this.setActiveElement = (mouseEvent) => {
+            this.routes.map((route) => route.active = false);
+            mouseEvent.item.active = true;
+        };
 
-        this.routes.push({
-            'text': 'Room ' + index,
-            'route': '/#/room/' + index,
-            'active': false
-        });
-    }
+        this.createNewRoom = () => {
+            let index = this.routes.length;
+
+            this.routes.push({
+                'text': 'Room ' + index,
+                'route': '/#/room/' + index,
+                'active': false
+            });
+        }
     </script>
 </sidebar>

@@ -1,13 +1,14 @@
 import 'riot-route/lib/tag';
 import riot from 'riot';
 
-// css
+// semantic
 import '../semantic/dist/semantic.min.css';
-import './components/sidebar/sidebar.css';
+import '../semantic/dist/semantic.min.js';
 
 // riot
 import './app.tag';
 import './components/sidebar/siderbar.tag';
 import './components/login/login.tag';
+import './components/login/login-modal.tag';
 
 riot.mount('*');
