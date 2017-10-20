@@ -4,7 +4,7 @@
     </div>
 
     <div class="ui fluid action input">
-        <input type="text" placeholder="New message..." id="create">
+        <input type="text" placeholder="New message..." id="create" onkeypress="{ onEnterPressed }">
         <button class="ui icon button">
             <i class="add icon" onclick="{ sendMessage }"></i>
         </button>
@@ -24,7 +24,6 @@
 
         socket.addEventListener('message', (event) => {
             this.messages.push({'text': event.data});
-            // this.scrollChatLog();
             this.update();
         });
 
@@ -35,20 +34,15 @@
             this.input.addEventListener('input', (event) => {
                 this.message.text = event.srcElement.value;
             });
-
-            document.addEventListener('keydown', (keydownEvent) => {
-                if (keydownEvent.key === 'Enter') {
-                    this.sendMessage();
-                }
-            });
         });
 
-        this.on('before-unmount', () => {
-            // this.input.removeEventListener('input');
-            // document.removeEventListener('keydown');
-        });
+        this.onEnterPressed = (event) => {
+            if (event.key === "Enter") {
+                this.sendMessage();
+            }
+        };
 
-        this.sendMessage = () => {
+        this.sendMessage = (event) => {
             socket.send(this.message.text);
             this.resetMessage();
             this.scrollChatLog();
