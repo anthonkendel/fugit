@@ -1,10 +1,10 @@
 import _ from 'lodash';
+import 'riot';
 
+function component () {
+    let element = document.createElement('div');
 
-function component() {
-    var element = document.createElement('div');
-
-     // Lodash, now imported by this script
+    // Lodash, now imported by this script
     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
     let array = [1, 2, 3];
     array.map((number) => number * 1);

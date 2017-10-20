@@ -1,3 +1,13 @@
 {
+    "rules": {
+        "semi": [
+            "error",
+            "always"
+        ],
+        "indent": [
+            "error",
+            4
+        ]
+    },
     "extends": "standard"
 }
