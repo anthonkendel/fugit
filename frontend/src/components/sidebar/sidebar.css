@@ -1,0 +1,15 @@
+.fugit-sidebar {
+    background: #333333;
+}
+
+.fugit-header {
+    padding: 15px;
+}
+
+.fugit-anchor, .fugit-h2 {
+    color:white !important;
+}
+
+.fugit-anchor.active {
+    border-right: 5px solid orange !important;
+}

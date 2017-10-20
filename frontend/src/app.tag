@@ -1,6 +1,8 @@
 <app>
     <router>
-        <route path="/"><login /></route>
+        <route path="/"> auth </route>
+        <route path="/login"><login /></route>
+        <route path="/fugit"> Home </route>
         <route path="*"><h1> Not found </h1></route>
     </router>
 </app>
