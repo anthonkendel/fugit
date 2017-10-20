@@ -26,6 +26,7 @@
     <login-modal/>
 
     <script>
+        import route from 'riot-route';
         import faker from 'faker';
         import User from '../../models/User';
         import c from '../../shared/constants';
@@ -40,6 +41,7 @@
             if (!userData || (userData.username === this.user.username && userData.email === this.user.email)) {
                 this.user.authenticated = true;
                 window.localStorage.setItem(c.FUGIT_USER, JSON.stringify(this.user));
+                route('/fugit');
             }
         }
 

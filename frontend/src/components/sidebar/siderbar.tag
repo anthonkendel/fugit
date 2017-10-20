@@ -14,7 +14,7 @@
         import './sidebar.css';
 
         this.routes = [
-            {'text': 'General', 'route': '/#/home', 'active': true}
+            {'text': 'General', 'route': '/#fugit', 'active': true}
         ];
 
         this.setActiveElement = (mouseEvent) => {
