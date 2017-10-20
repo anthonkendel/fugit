@@ -1,4 +1,5 @@
 .chat-log {
     height: 80vh;
     overflow-y: scroll;
+    padding-bottom: 15px;
 }

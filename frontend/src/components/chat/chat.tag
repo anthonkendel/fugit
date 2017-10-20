@@ -24,6 +24,7 @@
 
         socket.addEventListener('message', (event) => {
             this.messages.push({'text': event.data});
+            // this.scrollChatLog();
             this.update();
         });
 
@@ -50,12 +51,16 @@
         this.sendMessage = () => {
             socket.send(this.message.text);
             this.resetMessage();
-            this.chatLog.scrollTop = this.chatLog.scrollHeight;
+            this.scrollChatLog();
         };
 
         this.resetMessage = () => {
             this.message.text = '';
             this.input.value = '';
         };
+
+        this.scrollChatLog = () => {
+            this.chatLog.scrollTop = this.chatLog.scrollHeight;
+        }
     </script>
 </chat>
