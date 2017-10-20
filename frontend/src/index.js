@@ -1,5 +1,9 @@
 import _ from 'lodash';
-import 'riot';
+import riot from 'riot';
+
+// Riot files
+import './app.tag';
+import './components/login/login.tag';
 
 function component () {
     let element = document.createElement('div');
@@ -14,3 +18,5 @@ function component () {
 }
 
 document.body.appendChild(component());
+
+riot.mount('*');
