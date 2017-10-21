@@ -2,16 +2,18 @@ import faker from 'faker';
 
 class User {
     constructor ({ authenticated, username, email, avatar } = {}) {
+        const fakeData = faker.helpers.contextualCard();
+
         this.authenticated = authenticated || false;
-        this.username = username || faker.internet.userName();
-        this.email = email || faker.internet.email();
-        this.avatar = avatar || User.getGravatarAvatar();
+        this.username = username || fakeData.username;
+        this.email = email || fakeData.email;
+        this.avatar = avatar || User.getGravatarIdenticon();
     }
 
-    static getGravatarAvatar () {
+    static getGravatarIdenticon () {
         const number = faker.random.number(20);
         const size = 256;
-        return `https://www.gravatar.com/avatar/${number}?s=${size}&d=identicon&r=PG}`;
+        return `https://www.gravatar.com/avatar/${number}?s=${size}&d=identicon`;
     }
 }
 
