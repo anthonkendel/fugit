@@ -1,6 +1,11 @@
 <fugit>
-    <div class="ui grid">
-        <sidebar></sidebar>
-        <div style="margin-left: 200px;margin-top: 15px;" class="twelve wide column"><chat></chat></div>
+    <div class="fugit-grid">
+        <div class="main-header">header</div>
+        <div class="main-sidebar"><sidebar /></div>
+        <div class="main-content"><chat /></div>
     </div>
+
+    <script>
+        import './fugit.css';
+    </script>
 </fugit>
