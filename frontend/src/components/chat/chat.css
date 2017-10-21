@@ -1,5 +1,30 @@
+.chat-grid {
+    display: grid;
+    grid-template-areas: "log" "input";
+}
+
 .chat-log {
-    height: 80vh;
+    grid-area: log;
     overflow-y: scroll;
-    padding-bottom: 15px;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+
+.chat-input {
+    grid-area: input;
+}
+
+@media only screen and (min-width: 600px) {
+    .chat-grid {
+        grid-gap: 0;
+        grid-template-rows: calc(100vh - 140px) 50px;
+    }
+
+    .main-sidebar {
+        height: 100vh;
+    }
+}
+
+.chat-avatar {
+    height: 35px !important;
 }

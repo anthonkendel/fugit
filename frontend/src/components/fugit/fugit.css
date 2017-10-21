@@ -1,0 +1,35 @@
+.fugit-grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: "sidebar" "header" "content"
+}
+
+.main-header {
+    grid-area: header;
+    padding: 0 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.main-sidebar {
+    grid-area: sidebar;
+    background: #333333;
+    height: 100px;
+}
+
+.main-content {
+    grid-area: content;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    .fugit-grid {
+        grid-gap: 0;
+        grid-template-columns: 210px auto auto;
+        grid-template-rows: 50px auto auto;
+        grid-template-areas: "sidebar header  header" "sidebar content content" "sidebar content content"
+    }
+
+    .main-sidebar {
+        height: 100vh;
+    }
+}
