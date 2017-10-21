@@ -13,8 +13,7 @@
 
     <script>
         this.checkUser = (event) => {
-            const ENTER = 13;
-            if (event.which === 13) {
+            if (event.key === 'Enter') {
                 console.log('Success');
             }
         };

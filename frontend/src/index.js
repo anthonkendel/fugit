@@ -10,7 +10,6 @@ import './app.tag';
 import './components/fugit/fugit.tag';
 import './components/chat/chat.tag';
 import './components/sidebar/siderbar.tag';
-import './components/auth/auth.tag';
 import './components/login/login.tag';
 import './components/login/login-modal.tag';
 

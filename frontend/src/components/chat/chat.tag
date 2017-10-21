@@ -25,7 +25,7 @@
 
     <script>
         import './chat.css';
-        import c from '../../shared/constants';
+        import localStorage from '../../shared/localStorage/localStorage';
         import User from "../../models/User";
 
         this.message = {'text': ''};
@@ -45,7 +45,7 @@
         this.on('mount', () => {
             this.chatLog = document.getElementById('chat-log');
             this.input = document.getElementById('create');
-            this.user = this.getUser();
+            this.user = localStorage.getUser() || new User();
 
             this.input.addEventListener('input', (event) => {
                 this.message.text = event.srcElement.value;
@@ -93,17 +93,6 @@
 
         this.scrollChatLog = () => {
             this.chatLog.scrollTop = this.chatLog.scrollHeight;
-        }
-
-        this.getUser = () => {
-            const userData = window.localStorage.getItem(c.FUGIT_USER);
-            let user = new User();
-
-            if (userData) {
-                user = new User(JSON.parse(userData));
-            }
-
-            return user;
         }
     </script>
 </chat>
