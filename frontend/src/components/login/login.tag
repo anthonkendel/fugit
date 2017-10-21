@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <login-modal/>
+    <login-modal user="{ user }"/>
 
     <script>
         import route from 'riot-route';
@@ -46,7 +46,6 @@
 
         this.enterSite = () => {
             this.user.authenticated = true;
-            console.log(this.user);
             localStorage.setUser(localStorage.keys.USER, this.user);
             route('/fugit');
         }
@@ -62,7 +61,12 @@
         };
 
         this.showLoginModal = () => {
-            $('.ui.modal').modal('show');
+            $('.mini.modal')
+                .modal({
+                    inverted: true,
+                    closable: false
+                })
+                .modal('show');
         };
 
         this.on('mount', () => this.generateNewProfile);
