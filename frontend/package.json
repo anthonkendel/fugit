@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/anthonkendel/fugit#readme",
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.18.1",
     "faker": "^4.1.0",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",
